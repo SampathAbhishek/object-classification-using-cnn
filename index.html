@@ -1,0 +1,88 @@
+{% load static %}
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;title&gt;OBJECT CLASSIFICATION OUTPUT RESULT&lt;/title&gt;
+&lt;/head&gt;
+&lt;style&gt;
+label
+
+{
+font-size: 20px;
+color:red;
+font-family: Algerian;
+}
+body
+{
+background: url(../static/image/7.gif);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+min-height: 100vh;
+
+}
+button
+{
+font-size: 20px;
+font-family: wide latin;
+color:black;
+
+background-color: green;
+box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+}
+#ss
+{
+font-size: 20px;
+color:#20fc03;
+background-color: black;
+font-family: Times new roman;
+}
+.blink_me {
+animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+50% {
+opacity: 0;
+}
+}
+h2
+{
+background-color: #101010;
+
+font-family: Algerian;
+font-size: 33px;
+letter-spacing: 3px;
+color:#56ff00;
+}
+
+h1,h3
+{
+font-family: Algerian;
+font-size: 33px;
+letter-spacing: 3px;
+color:#56ff00;
+}
+a
+{
+font-size: 20px;
+color:#2DFA04 ;
+font-family: Times new roman;
+}
+
+&lt;/style&gt;
+&lt;body&gt;
+
+&lt;center&gt;&lt;h2 class=&quot;blink_me&quot;&gt;OBJECT CLASSIFICATION USING
+ARTIFICIAL NEURAL NETWORK&lt;/h2&gt;&lt;/center&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;marquee
+direction=&quot;down&quot;&gt;&lt;center&gt;&lt;b&gt;&lt;h1&gt;{{out}}&lt;/h1&gt;&lt;/b&gt;&lt;/center&gt;&lt;/marquee&gt;
+
+&lt;h3&gt;&lt;a href=&quot;{% url &#39;home&#39; %}&quot;&gt;Go Back!!!&lt;/a&gt;&lt;/h3&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
